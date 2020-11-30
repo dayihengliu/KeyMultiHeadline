@@ -45,7 +45,7 @@ The detailed hyper-parameters can be found in `run.sh`  and `config.py`.
 
 The model checkpoints and log file will be saved at `OUTPUT_DATA_DIR` and `LOG_FILE` in `run.sh`, respectively.
 
-Note that we also provide some variants of the keyphrase-aware headline generation model and keyphrase-agnostic baselines, which can be found in `model_pools/`. You can replace the `MODEL=${2:-encoder_filter_query_plus_decoder_mem}` in `run.sh` to other models (the model names can be found in `model_pools/__init__.py` if you want to use other baselines.
+Note that we also provide some variants of the keyphrase-aware headline generation model and keyphrase-agnostic baselines, which can be found in `model_pools/`. If you want to use other baselines, please replace the `MODEL=${2:-encoder_filter_query_plus_decoder_mem}` in `run.sh` to other models (the model names can be found in `model_pools/__init__.py`).
 
 
 # Citation
