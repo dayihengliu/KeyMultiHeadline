@@ -52,7 +52,7 @@ Note that we also provide some variants of the keyphrase-aware headline generati
 ```
 @inproceedings{liu2020keynews,
     title = "Diverse, Controllable, and Keyphrase-Aware: A Corpus and Method for News Multi-Headline Generation",
-    author={Liu, Dayiheng and Gong, Yeyun and Yan, Yu and Fu, Jie and Shao, Bo and Jiang, Daxin and Lv, Jiancheng and Duan, Nan},
+    author="Liu, Dayiheng and Gong, Yeyun and Yan, Yu and Fu, Jie and Shao, Bo and Jiang, Daxin and Lv, Jiancheng and Duan, Nan",
     booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
     year = "2020"
 }
