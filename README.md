@@ -35,7 +35,8 @@ Similarly, the file `test_keyaware_news_KQTAC_5slot.txt` provides 5 tuples with 
 
 # Baselines
 
-Our baselines are based on BERT-base-uncased model, which can be downloaded at [here](https://drive.google.com/file/d/13K_OUOJvwTAFvaPs9faub49zfd28aWKq/view?usp=sharing).
+## Headline Generation
+Our headline generation baselines are based on BERT-base-uncased model, which can be downloaded at [here](https://drive.google.com/file/d/13K_OUOJvwTAFvaPs9faub49zfd28aWKq/view?usp=sharing).
 
 run ``run_base.sh`` for BASE model training and testing.
 
@@ -46,6 +47,12 @@ The detailed hyper-parameters can be found in `run.sh`  and `config.py`.
 The model checkpoints and log file will be saved at `OUTPUT_DATA_DIR` and `LOG_FILE` in `run.sh`, respectively.
 
 Note that we also provide some variants of the keyphrase-aware headline generation model and keyphrase-agnostic baselines, which can be found in `model_pools/`. If you want to use other baselines, please replace the `MODEL=${2:-encoder_filter_query_plus_decoder_mem}` in `run.sh` to other models (the model names can be found in `model_pools/__init__.py`).
+
+## Keyphrase Generation
+
+To training the SEQ2SEQ model for keyphrase generation, please replace the content of the `title` with `key` for each sample in the `train_keyaware_news_KQTAC.txt`, `dev_keyaware_news_KQTAC.txt`, and `test_keyaware_news_KQTAC.txt`. After that, run ``run_base.sh`` to use the BASE model for keyphrase generation. If you want to generate diverse keyphrases, please set `--use_diverse_beam_search` and tune `--decode_gamma` to control the diverse penalty.
+
+To training the SLOT model for keyphrase generation, we adopt the implementation of the answer span prediction provided by Huggingface, please refer to the code [here](https://github.com/huggingface/transformers/tree/master/examples/question-answering).
 
 
 # Citation
