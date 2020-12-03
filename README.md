@@ -1,7 +1,7 @@
 # Diverse, Controllable, and Keyphrase-Aware: A Corpus and Method for News Multi-Headline Generation
 
 This repo contains the code and data of the following paper:
-> **Diverse, Controllable, and Keyphrase-Aware: A Corpus and Method for News Multi-Headline Generation**, Dayiheng Liu, Yeyun Gong, Yu Yan, Jie Fu, Bo Shao, Daxin Jiang, Jiancheng Lv, Nan Duan, EMNLP2020
+> **Diverse, Controllable, and Keyphrase-Aware: A Corpus and Method for News Multi-Headline Generation**, Dayiheng Liu, Yeyun Gong, Yu Yan, Jie Fu, Bo Shao, Daxin Jiang, Jiancheng Lv, Nan Duan, EMNLP2020 [paper](https://www.aclweb.org/anthology/2020.emnlp-main.505.pdf)
 
 
 # Prerequisites
